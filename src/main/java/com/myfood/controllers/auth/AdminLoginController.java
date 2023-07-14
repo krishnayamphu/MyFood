@@ -1,6 +1,7 @@
 package com.myfood.controllers.auth;
 
 import com.myfood.dao.UserDAO;
+import org.apache.commons.codec.digest.DigestUtils;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -18,12 +19,12 @@ public class AdminLoginController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username=request.getParameter("username");
         String password=request.getParameter("password");
-        if(UserDAO.auth(username,password)){
+        if(UserDAO.auth(username, DigestUtils.sha256Hex(password))){
             HttpSession session=request.getSession();
-            session.setAttribute("user","Admin");
-            response.sendRedirect("welcome");
+            session.setAttribute("admin",username);
+            response.sendRedirect("admin");
         }else{
-            request.getRequestDispatcher("login/login.jsp").forward(request,response);
+            request.getRequestDispatcher("auth/admin-login.jsp").forward(request,response);
         }
     }
 }
