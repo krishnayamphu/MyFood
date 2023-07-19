@@ -10,14 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19974cb2-7db3-418d-83af-13466cec566e" name="Changes" comment="update project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/admin/AdminDashboardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/filter/AdminAuthFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/dashboard.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/admin/FoodAddController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/admin/FoodController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/dao/FoodDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/models/Food.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/food/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/food/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/head.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/script.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myfood/TestApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myfood/TestApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/auth/AdminLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/auth/AdminLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/auth/admin-login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/auth/admin-login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/filter/AdminAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/filter/AdminAuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/dashboard.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -53,14 +57,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/DevSpace/Java/MyFood/src/main/webapp/admin/food",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\admin\food" />
+      <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\admin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\admin" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.myfood.dao" />
+    </key>
+  </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8">
     <configuration name="TestApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.myfood.TestApp" />
@@ -183,7 +200,8 @@
       <workItem from="1689155620234" duration="936000" />
       <workItem from="1689236358311" duration="1098000" />
       <workItem from="1689237818901" duration="1706000" />
-      <workItem from="1689323664117" duration="2010000" />
+      <workItem from="1689323664117" duration="2124000" />
+      <workItem from="1689755299579" duration="2601000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1689236593505</created>
@@ -213,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689323967151</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update project">
+      <created>1689325787448</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689325787448</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
