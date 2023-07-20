@@ -8,13 +8,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/myfood/admin">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Media</a>
+                        <a class="nav-link" href="/myfood/admin/media">Media</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Foods</a>
+                        <a class="nav-link" href="/myfood/admin/food">Foods</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Orders</a>
@@ -22,8 +22,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Customers</a>
                     </li>
-
-
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

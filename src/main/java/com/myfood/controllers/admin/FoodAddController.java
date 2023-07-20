@@ -23,7 +23,6 @@ public class FoodAddController extends HttpServlet {
         String image=request.getParameter("image");
         Food food=new Food(name,size,price,image);
         FoodDAO.saveFood(food);
-        response.sendRedirect("admin/food");
-
+        response.sendRedirect("/myfood/admin/food");
     }
 }

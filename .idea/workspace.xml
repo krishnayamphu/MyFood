@@ -9,19 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19974cb2-7db3-418d-83af-13466cec566e" name="Changes" comment="update project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/admin/FoodAddController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/admin/FoodController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/dao/FoodDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/models/Food.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/food/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/food/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/head.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/script.jsp" afterDir="false" />
+    <list default="true" id="19974cb2-7db3-418d-83af-13466cec566e" name="Changes" comment="food create">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/admin/MediaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/media.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/filter/AdminAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/filter/AdminAuthFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/dashboard.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myfood/TestApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myfood/TestApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/admin/FoodAddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/admin/FoodAddController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/admin/FoodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/admin/FoodController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myfood/dao/FoodDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myfood/dao/FoodDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/food/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/food/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/food/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/food/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/header.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,14 +60,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/DevSpace/Java/MyFood/src/main/webapp/admin/food",
+    "last_opened_file_path": "C:/DevSpace/Java/MyFood/src/main/webapp/admin",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\admin\food" />
       <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\admin" />
+      <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\admin\food" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\admin" />
@@ -201,7 +199,9 @@
       <workItem from="1689236358311" duration="1098000" />
       <workItem from="1689237818901" duration="1706000" />
       <workItem from="1689323664117" duration="2124000" />
-      <workItem from="1689755299579" duration="2601000" />
+      <workItem from="1689755299579" duration="3507000" />
+      <workItem from="1689770297173" duration="227000" />
+      <workItem from="1689840261900" duration="4832000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1689236593505</created>
@@ -238,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689325787448</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="food create">
+      <created>1689758038321</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689758038321</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +265,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init project" />
     <MESSAGE value="update project" />
-    <option name="LAST_COMMIT_MESSAGE" value="update project" />
+    <MESSAGE value="food create" />
+    <option name="LAST_COMMIT_MESSAGE" value="food create" />
   </component>
 </project>
