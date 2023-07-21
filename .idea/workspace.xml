@@ -9,12 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19974cb2-7db3-418d-83af-13466cec566e" name="Changes" comment="food show, media manage">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/admin/MediaDelController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/utils/Media.java" afterDir="false" />
+    <list default="true" id="19974cb2-7db3-418d-83af-13466cec566e" name="Changes" comment="media manage">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/admin/FoodEditController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/food/edit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/admin/MediaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/admin/MediaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/admin/FoodAddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/admin/FoodAddController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myfood/dao/FoodDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myfood/dao/FoodDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/food/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/food/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/food/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/food/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/media.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/media.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,19 +53,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/DevSpace/Java/MyFood/src/main/webapp/admin&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/DevSpace/Java/MyFood/src/main/webapp/admin/food",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\admin" />
       <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\admin\food" />
+      <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\admin" />
@@ -199,7 +201,7 @@
       <workItem from="1689755299579" duration="3507000" />
       <workItem from="1689770297173" duration="227000" />
       <workItem from="1689840261900" duration="4974000" />
-      <workItem from="1689925619580" duration="2406000" />
+      <workItem from="1689925619580" duration="5234000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1689236593505</created>
@@ -250,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689845271360</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="media manage">
+      <created>1689928442476</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1689928442476</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,6 +281,7 @@
     <MESSAGE value="update project" />
     <MESSAGE value="food create" />
     <MESSAGE value="food show, media manage" />
-    <option name="LAST_COMMIT_MESSAGE" value="food show, media manage" />
+    <MESSAGE value="media manage" />
+    <option name="LAST_COMMIT_MESSAGE" value="media manage" />
   </component>
 </project>

@@ -15,9 +15,7 @@
             <button class="btn btn-outline-secondary" type="submit">Upload</button>
         </div>
     </form>
-
     <hr>
-
     <h4>All Media Files</h4>
     <c:choose>
         <c:when test="${!files.isEmpty()}">
@@ -39,8 +37,6 @@
         </c:when>
         <c:otherwise>No media files</c:otherwise>
     </c:choose>
-
-
 </div>
 
 <%@ include file="script.jsp" %>

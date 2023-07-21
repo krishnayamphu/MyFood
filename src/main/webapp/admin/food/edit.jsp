@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <%@ include file="../head.jsp" %>
-    <title>Create Food</title>
+    <title>Edit Food</title>
 </head>
 <body>
 <%@ include file="../header.jsp" %>
@@ -14,26 +14,27 @@
         <a class="btn btn-primary" href="food">All Foods</a>
     </div>
 
-    <form method="post" action="/myfood/admin/food-add">
+    <form method="post" action="/myfood/admin/food-edit">
+        <input type="hidden" name="id" value="${food.id}">
         <div class="row row-cols-1 row-cols-lg-2">
             <div class="col">
                 <div class="mb-3">
                     <label class="form-label">Name</label>
-                    <input type="text" class="form-control" name="name">
+                    <input type="text" class="form-control" name="name" value="${food.name}">
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Size</label>
-                    <input type="text" class="form-control" name="size">
+                    <input type="text" class="form-control" name="size" value="${food.size}">
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Price</label>
-                    <input type="number" class="form-control" name="price">
+                    <input type="number" class="form-control" name="price" value="${food.price}">
                 </div>
             </div>
             <div class="col">
                 <label class="form-label">Image</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" name="image" id="image">
+                    <input type="text" class="form-control" name="image" id="image" value="${food.image}">
                     <button class="btn btn-outline-secondary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Choose</button>
                 </div>
 
@@ -71,7 +72,7 @@
                 <!-- end Modal -->
             </div>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Update</button>
     </form>
 
 

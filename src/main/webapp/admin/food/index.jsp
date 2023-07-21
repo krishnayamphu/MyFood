@@ -31,10 +31,10 @@
                 <td>${food.name}</td>
                 <td>${food.size}</td>
                 <td>${food.price}</td>
-                <td>${food.image}</td>
+                <td><img height="50px" src="/myfood/uploads/${food.image}" alt=""></td>
                 <td>
                     <div class="d-flex">
-                        <a class="btn btn-outline-success me-3" href="">Edit</a>
+                        <a class="btn btn-outline-success me-3" href="/myfood/admin/food-edit?id=${food.id}">Edit</a>
                         <form action="/myfood/admin/food" method="post">
                             <input type="hidden" name="id" value="${food.id}">
                             <button class="btn btn-outline-danger" type="submit">Delete</button>

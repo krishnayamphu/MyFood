@@ -27,21 +27,21 @@ public class FoodDAO {
         return foods;
     }
 
-    public static User getUsers(int id) {
-        User user = null;
-        String sql = "SELECT * FROM users WHERE id=?";
+    public static Food getFood(int id) {
+        Food food = null;
+        String sql = "SELECT * FROM foods WHERE id=?";
         Connection cn = ConnectDB.connect();
         try {
             PreparedStatement ps = cn.prepareStatement(sql);
             ps.setInt(1, id);
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
-                user = new User(rs.getInt("id"), rs.getString("username"), rs.getString("password"));
+                food = new Food(rs.getInt("id"), rs.getString("name"), rs.getString("size"),rs.getDouble("price"),rs.getString("image"));
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return user;
+        return food;
     }
 
     public static boolean saveFood(Food food) {
@@ -63,15 +63,17 @@ public class FoodDAO {
         return status;
     }
 
-    public static boolean updateUser(User user) {
+    public static boolean updateFood(Food food) {
         boolean status = false;
-        String sql = "UPDATE users SET username=?,password=? WHERE id=?";
+        String sql = "UPDATE foods SET name=?,size=?,price=?,image=? WHERE id=?";
         Connection cn = ConnectDB.connect();
         try {
             PreparedStatement ps = cn.prepareStatement(sql);
-            ps.setString(1, user.getUsername());
-            ps.setString(2, user.getPassword());
-            ps.setInt(3, user.getId());
+            ps.setString(1, food.getName());
+            ps.setString(2, food.getSize());
+            ps.setDouble(3, food.getPrice());
+            ps.setString(4,food.getImage());
+            ps.setInt(5,food.getId());
             if (ps.executeUpdate() == 1) {
                 status = true;
             }
