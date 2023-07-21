@@ -1,5 +1,6 @@
 package com.myfood.controllers.admin;
 
+import com.myfood.utils.Media;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
@@ -20,13 +21,7 @@ public class MediaController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String path=getServletContext().getRealPath("/uploads");
-        File file=new File(path);
-        File[] files=file.listFiles();
-        ArrayList<String> allFiles=new ArrayList<>();
-        for(File f:files){
-            allFiles.add(f.getName());
-            System.out.println(f.getName());
-        }
+        ArrayList<String> allFiles= Media.allFiles(path);
         request.setAttribute("allFiles",allFiles);
         request.getRequestDispatcher("media.jsp").forward(request,response);
     }
