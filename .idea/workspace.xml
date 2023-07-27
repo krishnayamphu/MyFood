@@ -9,18 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19974cb2-7db3-418d-83af-13466cec566e" name="Changes" comment="food crud complete">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/customer/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/customer/CustomerRegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/dao/CustomerDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/models/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/auth/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/customer/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/head.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/script.jsp" afterDir="false" />
+    <list default="true" id="19974cb2-7db3-418d-83af-13466cec566e" name="Changes" comment="CUSTOMER">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/auth/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/auth/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,14 +55,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/DevSpace/Java/MyFood/src/main/webapp/auth",
+    "last_opened_file_path": "C:/DevSpace/Java/MyFood/src/main/webapp",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\auth" />
       <recent name="C:\DevSpace\Java\MyFood\src\main\webapp" />
+      <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\auth" />
       <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\admin\food" />
       <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\admin" />
     </key>
@@ -210,6 +204,7 @@
       <workItem from="1690182437223" duration="643000" />
       <workItem from="1690187640530" duration="1830000" />
       <workItem from="1690359849983" duration="2388000" />
+      <workItem from="1690446693825" duration="2203000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1689236593505</created>
@@ -274,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689931241167</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="CUSTOMER">
+      <created>1690446766351</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1690446766351</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +300,7 @@
     <MESSAGE value="food show, media manage" />
     <MESSAGE value="media manage" />
     <MESSAGE value="food crud complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="food crud complete" />
+    <MESSAGE value="CUSTOMER" />
+    <option name="LAST_COMMIT_MESSAGE" value="CUSTOMER" />
   </component>
 </project>

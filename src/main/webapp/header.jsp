@@ -8,25 +8,15 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/myfood/admin">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/myfood/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/myfood/admin/media">Media</a>
+                        <a class="nav-link" href="/myfood/about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/myfood/admin/food">Foods</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Orders</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Customers</a>
+                        <a class="nav-link" href="/myfood/contact">Contact</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
