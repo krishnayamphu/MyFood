@@ -55,7 +55,10 @@
                         <h4>${food.name}</h4>
                         <p>Size:${food.size}</p>
                         <p>NPR ${food.price}</p>
-                        <a href="#" class="btn btn-primary">Order</a>
+                        <form action="/myfood/orders" method="get">
+                            <input type="hidden" name="id" value="${food.id}">
+                            <button class="btn btn-outline-success" type="submit">Order</button>
+                        </form>
                     </div>
                 </div>
             </div>
