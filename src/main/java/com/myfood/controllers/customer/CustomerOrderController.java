@@ -1,7 +1,9 @@
 package com.myfood.controllers.customer;
 
 import com.myfood.dao.FoodDAO;
+import com.myfood.dao.OrderDAO;
 import com.myfood.models.Food;
+import com.myfood.models.Order;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -22,6 +24,15 @@ public class CustomerOrderController extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        int uid=1;
+        int foodId=Integer.parseInt(request.getParameter("fid"));
+        double total=Double.parseDouble(request.getParameter("tid"));
+        Order order=new Order();
+        order.setUserId(uid);
+        order.setFoodId(foodId);
+        order.setTotal(total);
+        order.setStatus(0);
+        OrderDAO.saveOrder(order);
+        response.getWriter().print("ordered complete");
     }
 }

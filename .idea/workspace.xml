@@ -9,13 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19974cb2-7db3-418d-83af-13466cec566e" name="Changes" comment="frontpage">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/customer/CustomerOrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/dao/OrderDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/models/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/customer/order.jsp" afterDir="false" />
+    <list default="true" id="19974cb2-7db3-418d-83af-13466cec566e" name="Changes" comment="order">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/admin/AdminOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/order/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/order/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/order/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myfood/TestApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myfood/TestApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/customer/CustomerOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/customer/CustomerOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/customer/order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/customer/order.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,25 +58,25 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/DevSpace/Java/MyFood/src/main/webapp/customer",
+    "last_opened_file_path": "C:/DevSpace/Java/MyFood/src/main/webapp/admin",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\admin" />
       <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\customer" />
       <recent name="C:\DevSpace\Java\MyFood\src\main\webapp" />
       <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\auth" />
       <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\admin\food" />
-      <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\admin" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.myfood.controllers.admin" />
       <recent name="com.myfood.controllers.customer" />
       <recent name="com.myfood.dao" />
-      <recent name="com.myfood.controllers.admin" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8">
@@ -208,7 +210,10 @@
       <workItem from="1690187640530" duration="1830000" />
       <workItem from="1690359849983" duration="2388000" />
       <workItem from="1690446693825" duration="2561000" />
-      <workItem from="1690533014788" duration="2975000" />
+      <workItem from="1690533014788" duration="3004000" />
+      <workItem from="1690703854077" duration="856000" />
+      <workItem from="1690705800674" duration="723000" />
+      <workItem from="1690706720565" duration="1732000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1689236593505</created>
@@ -287,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690449211653</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="order">
+      <created>1690536125193</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1690536125193</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,6 +325,7 @@
     <MESSAGE value="food crud complete" />
     <MESSAGE value="CUSTOMER" />
     <MESSAGE value="frontpage" />
-    <option name="LAST_COMMIT_MESSAGE" value="frontpage" />
+    <MESSAGE value="order" />
+    <option name="LAST_COMMIT_MESSAGE" value="order" />
   </component>
 </project>
