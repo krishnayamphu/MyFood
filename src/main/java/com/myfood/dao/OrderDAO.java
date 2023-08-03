@@ -33,22 +33,51 @@ public class OrderDAO {
         }
         return orders;
     }
+    public static ArrayList<Order> getOrders(int userId) {
+        ArrayList<Order> orders = new ArrayList<>();
+        String sql = "SELECT * FROM orders WHERE user_id=?";
+        Connection cn = ConnectDB.connect();
+        try {
+            PreparedStatement ps = cn.prepareStatement(sql);
+            ps.setInt(1,userId);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                Order order=new Order();
+                order.setId(rs.getInt("id"));
+                order.setFoodId(rs.getInt("food_id"));
+                order.setUserId(rs.getInt("user_id"));
+                order.setTotal(rs.getDouble("total"));
+                order.setStatus(rs.getInt("status"));
+                order.setCreatedAt(rs.getString("created_at"));
+                orders.add(order);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return orders;
+    }
 
-    public static Food getFood(int id) {
-        Food food = null;
-        String sql = "SELECT * FROM foods WHERE id=?";
+    public static Order getOrder(int id) {
+        Order order = null;
+        String sql = "SELECT * FROM orders WHERE id=?";
         Connection cn = ConnectDB.connect();
         try {
             PreparedStatement ps = cn.prepareStatement(sql);
             ps.setInt(1, id);
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
-                food = new Food(rs.getInt("id"), rs.getString("name"), rs.getString("size"),rs.getDouble("price"),rs.getString("image"));
-            }
+                order=new Order();
+                order.setId(rs.getInt("id"));
+                order.setFoodId(rs.getInt("food_id"));
+                order.setUserId(rs.getInt("user_id"));
+                order.setTotal(rs.getDouble("total"));
+                order.setStatus(rs.getInt("status"));
+                order.setCreatedAt(rs.getString("created_at"));
+                 }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return food;
+        return order;
     }
 
     public static boolean saveOrder(Order order) {
@@ -70,17 +99,14 @@ public class OrderDAO {
         return status;
     }
 
-    public static boolean updateFood(Food food) {
+    public static boolean updateOrder(int id, int statusId) {
         boolean status = false;
-        String sql = "UPDATE foods SET name=?,size=?,price=?,image=? WHERE id=?";
+        String sql = "UPDATE orders SET status=? WHERE id=?";
         Connection cn = ConnectDB.connect();
         try {
             PreparedStatement ps = cn.prepareStatement(sql);
-            ps.setString(1, food.getName());
-            ps.setString(2, food.getSize());
-            ps.setDouble(3, food.getPrice());
-            ps.setString(4,food.getImage());
-            ps.setInt(5,food.getId());
+            ps.setInt(1,statusId);
+            ps.setInt(2,id);
             if (ps.executeUpdate() == 1) {
                 status = true;
             }

@@ -30,10 +30,25 @@
                 <td>${order.foodId}</td>
                 <td>${order.userId}</td>
                 <td>${order.total}</td>
-                <td>${order.status}</td>
+                <td>
+                    <span>
+                        <c:choose>
+                            <c:when test="${order.status==0}">
+                                Pending
+                            </c:when>
+                            <c:when test="${order.status==1}">
+                                Complete
+                            </c:when>
+                            <c:otherwise>
+                                Cancelled
+                            </c:otherwise>
+                        </c:choose>
+                    </span>
+
+                </td>
                 <td>
                     <div class="d-flex">
-                        <a class="btn btn-outline-success me-3" href="/myfood/admin/order-edit?id=${order.id}">View</a>
+                        <a class="btn btn-outline-danger me-3" href="">Cancel Order</a>
                     </div>
 
                 </td>

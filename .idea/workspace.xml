@@ -9,15 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19974cb2-7db3-418d-83af-13466cec566e" name="Changes" comment="order">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/admin/AdminOrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/order/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/order/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/order/index.jsp" afterDir="false" />
+    <list default="true" id="19974cb2-7db3-418d-83af-13466cec566e" name="Changes" comment="order mgmt">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/admin/AdminOrderEditController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/customer/myorder.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/myfood/TestApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myfood/TestApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/customer/CustomerOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/customer/CustomerOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/customer/order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/customer/order.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myfood/controllers/customer/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myfood/dao/OrderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myfood/dao/OrderDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/order/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/order/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/order/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/order/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,14 +58,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/DevSpace/Java/MyFood/src/main/webapp/admin",
+    "last_opened_file_path": "C:/DevSpace/Java/MyFood/src/main/webapp/customer",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\admin" />
       <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\customer" />
+      <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\admin" />
       <recent name="C:\DevSpace\Java\MyFood\src\main\webapp" />
       <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\auth" />
       <recent name="C:\DevSpace\Java\MyFood\src\main\webapp\admin\food" />
@@ -213,7 +213,9 @@
       <workItem from="1690533014788" duration="3004000" />
       <workItem from="1690703854077" duration="856000" />
       <workItem from="1690705800674" duration="723000" />
-      <workItem from="1690706720565" duration="1732000" />
+      <workItem from="1690706720565" duration="1917000" />
+      <workItem from="1690792487631" duration="2983000" />
+      <workItem from="1691051642992" duration="1698000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1689236593505</created>
@@ -299,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690536125193</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="order mgmt">
+      <created>1690708651827</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1690708651827</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,6 +335,7 @@
     <MESSAGE value="CUSTOMER" />
     <MESSAGE value="frontpage" />
     <MESSAGE value="order" />
-    <option name="LAST_COMMIT_MESSAGE" value="order" />
+    <MESSAGE value="order mgmt" />
+    <option name="LAST_COMMIT_MESSAGE" value="order mgmt" />
   </component>
 </project>

@@ -10,66 +10,26 @@
 <%@ include file="../header.jsp" %>
 <div class="container">
     <div class="d-flex justify-content-between py-5">
-        <h4>Food Management</h4>
-        <a class="btn btn-primary" href="food">All Foods</a>
+        <h4>Order Detail</h4>
     </div>
 
-    <form method="post" action="/myfood/admin/food-edit">
-        <input type="hidden" name="id" value="${food.id}">
+    <form method="post" action="/myfood/admin/order-edit">
+        <input type="hidden" name="id" value="${order.id}">
         <div class="row row-cols-1 row-cols-lg-2">
             <div class="col">
-                <div class="mb-3">
-                    <label class="form-label">Name</label>
-                    <input type="text" class="form-control" name="name" value="${food.name}">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Size</label>
-                    <input type="text" class="form-control" name="size" value="${food.size}">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Price</label>
-                    <input type="number" class="form-control" name="price" value="${food.price}">
-                </div>
+            <p>${food.id}</p>
+                <p>${user.id}</p>
+                <p>${total.id}</p>
+                <p><p>${food.created_at}</p></p>
             </div>
             <div class="col">
-                <label class="form-label">Image</label>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" name="image" id="image" value="${food.image}">
-                    <button class="btn btn-outline-secondary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Choose</button>
-                </div>
+                <label class="form-label">Status</label>
+                <select name="status" id="">
+                    <option value="0">Pending</option>
+                    <option value="1">Complete</option>
+                    <option value="2">Cancel</option>
+                </select>
 
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <h4>All Media Files</h4>
-                                <c:choose>
-                                    <c:when test="${!files.isEmpty()}">
-                                        <div class="row row-cols-1 row-cols-lg-6">
-                                            <c:forEach var="item" items="${allFiles}">
-                                                <div class="col">
-                                                    <div class="card">
-                                                        <img data-bs-dismiss="modal" onclick="setImage('${item}')" class="img-fluid" src="/myfood/uploads/${item}" alt="">
-                                                    </div>
-                                                </div>
-                                            </c:forEach>
-                                        </div>
-                                    </c:when>
-                                    <c:otherwise>No media files</c:otherwise>
-                                </c:choose>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end Modal -->
             </div>
         </div>
         <button type="submit" class="btn btn-primary">Update</button>

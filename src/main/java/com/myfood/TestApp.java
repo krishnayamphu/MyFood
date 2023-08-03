@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class TestApp {
     public static void main(String[] args) {
-        ArrayList<Order> orders= OrderDAO.getOrders();
+        ArrayList<Order> orders= OrderDAO.getOrders(1);
         for (Order o:orders             ) {
             System.out.println(o.getId());
         }
