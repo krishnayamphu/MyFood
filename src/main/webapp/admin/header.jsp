@@ -17,10 +17,10 @@
                         <a class="nav-link" href="/myfood/admin/food">Foods</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Orders</a>
+                        <a class="nav-link" href="/myfood/admin/orders">Orders</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Customers</a>
+                        <a class="nav-link" href="/myfood/admin/customers">Customers</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">

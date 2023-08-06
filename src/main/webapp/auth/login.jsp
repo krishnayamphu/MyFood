@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html lang="en">
@@ -14,6 +15,12 @@
     <div class="row justify-content-center py-5 my-5">
         <div class="col-4">
             <form action="login" method="post">
+                <c:if test="${err!=null}">
+                    <div class="alert alert-danger" role="alert">
+                            ${err}
+                    </div>
+                </c:if>
+
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
                     <input type="email" class="form-control" id="email" name="email">

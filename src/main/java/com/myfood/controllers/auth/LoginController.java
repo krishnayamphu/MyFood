@@ -20,13 +20,14 @@ public class LoginController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
-       if (CustomerDAO.auth(email, DigestUtils.sha256Hex(password))){
-            HttpSession session=request.getSession();
-            session.setAttribute("user",email);
-            response.sendRedirect("profile");
-    }else{
-        request.getRequestDispatcher("login.jsp").forward(request, response);
+        if (CustomerDAO.auth(email, DigestUtils.sha256Hex(password))) {
+            HttpSession session = request.getSession();
+            session.setAttribute("user", email);
+            response.sendRedirect("/myfood/my-orders");
+        } else {
+            request.setAttribute("err","Invalid username or password");
+            request.getRequestDispatcher("auth/login.jsp").forward(request, response);
+        }
     }
-}
 
 }

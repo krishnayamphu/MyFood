@@ -12,7 +12,7 @@
     <div class="d-flex justify-content-between py-5">
         <h4>Order Management</h4>
     </div>
-    <table class="table">
+    <table class="table table-sm">
         <thead>
         <tr>
             <th scope="col">#</th>
@@ -48,7 +48,7 @@
                 </td>
                 <td>
                     <div class="d-flex">
-                        <a class="btn btn-outline-danger me-3" href="">Cancel Order</a>
+                        <a class="btn btn-sm btn-outline-danger me-3 ${order.status==1?'disabled':''}" href="">Cancel Order</a>
                     </div>
 
                 </td>

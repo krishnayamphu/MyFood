@@ -17,6 +17,30 @@
                         <a class="nav-link" href="/myfood/contact">Contact</a>
                     </li>
                 </ul>
+                <c:choose>
+                    <c:when test="${user==null}">
+                        <a class="btn btn-secondary" href="/myfood/login">
+                            Sign in
+                        </a>
+                    </c:when>
+                    <c:otherwise>
+                        <div class="btn-group">
+
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                                    ${user}
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/myfood/my-orders">My Orders</a></li>
+                                <li><a class="dropdown-item" href="/myfood/profile">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">
+                                    <form action="/myfood/logout" method="post">
+                                        <button>Logout</button>
+                                    </form>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </c:otherwise>
+                </c:choose>
             </div>
         </div>
     </nav>

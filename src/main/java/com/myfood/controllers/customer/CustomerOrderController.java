@@ -33,6 +33,6 @@ public class CustomerOrderController extends HttpServlet {
         order.setTotal(total);
         order.setStatus(0);
         OrderDAO.saveOrder(order);
-        response.getWriter().print("ordered complete");
+        response.sendRedirect("/myfood/my-orders");
     }
 }

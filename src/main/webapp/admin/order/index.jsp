@@ -12,7 +12,7 @@
     <div class="d-flex justify-content-between py-5">
         <h4>Order Management</h4>
     </div>
-    <table class="table">
+    <table class="table table-sm">
         <thead>
         <tr>
             <th scope="col">#</th>
@@ -30,10 +30,16 @@
                 <td>${order.foodId}</td>
                 <td>${order.userId}</td>
                 <td>${order.total}</td>
-                <td>${order.status}</td>
+                <td>
+                    <c:choose>
+                        <c:when test="${order.status==1}">Complete</c:when>
+                        <c:when test="${order.status==2}">Cancel</c:when>
+                        <c:otherwise>Pending</c:otherwise>
+                    </c:choose>
+                </td>
                 <td>
                     <div class="d-flex">
-                        <a class="btn btn-outline-success me-3" href="/myfood/admin/order-edit?id=${order.id}">View</a>
+                        <a class="btn btn-sm btn-outline-success me-3" href="/myfood/admin/order-edit?id=${order.id}">View</a>
                     </div>
 
                 </td>
